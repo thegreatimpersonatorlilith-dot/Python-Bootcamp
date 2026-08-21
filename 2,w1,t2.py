@@ -1,0 +1,7 @@
+n1=int(input("enter n1: "))
+n2=int(input("enter n2: "))
+n3=int(input("enter n3: "))
+w1=float(input("gimme the first weight:"))
+w2=float(input("gimme the second weight:"))
+w3=float(input("gimme the third  weight:"))
+print(((n1*w1)+(n2*w2)+(n3*w3))/(w1+w2+w3))
