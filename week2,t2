@@ -1,0 +1,33 @@
+name = input("Enter your name: ")
+salary = int(input("Enter your monthly salary: "))
+marital_status = input("Enter your marital status (married/single): ")
+
+
+if salary < 50_000_000:
+    tax_rate = 0
+elif salary <= 100_000_000:
+    tax_rate = 0.10
+elif salary <= 200_000_000:
+    tax_rate = 0.20
+else:
+    tax_rate = 0.30
+
+tax = salary * tax_rate
+
+
+if marital_status == "married":
+    discount = tax * 0.10
+else:
+    discount = 0
+
+final_tax = tax - discount
+
+
+print("\nTax Report for", name)
+print("-" * 30)
+print(f"Monthly salary: {salary:,} Toman")
+print(f"Calculated tax: {tax:,.0f} Toman ({tax_rate * 100:.0f}%)")
+print(f"Marital discount: {discount:,.0f} Toman")
+print(f"Final tax to pay: {final_tax:,.0f} Toman")
+
+print("\nThank you for paying your taxes on time!")
