@@ -1,0 +1,24 @@
+#1
+ number=int(input("Enter a number: "))
+
+ if number%2==0:
+     print("Its even")
+ else:
+     print("Its odd")
+
+#2
+ age=int(input("Enter your age: "))
+
+ if age<=18:
+     print("gurl you so young your birth cirtificate is still loading,go do your homework")
+ else:
+     print("damn you so old I cant even throw shade,you are historically significant.")
+
+#3 biggest number
+num1,num2=input("Enter two numbers: ").split()
+if int(num1)>int(num2):
+    print("num1 is bigger")
+elif int(num2)>int(num1):
+    print("num2 is bigger")
+else:
+    print("they are equal,are you stupid?")
