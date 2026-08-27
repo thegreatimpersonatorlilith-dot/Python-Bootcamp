@@ -1,0 +1,26 @@
+numbers=input("Enter 2 numbers: ").split()
+num1,num2=map(float,numbers)
+op=input("Enter the operator: ")
+
+    
+if op=='+':
+    result=num1+num2
+elif op=='-':
+    result=num1-num2
+elif op=='/' and num2!=0:
+    result=num1/num2
+elif op=="//"and num2!=0:
+    result=num1//num2
+elif op=="%"and num2!=0:
+    result=num1%num2
+elif op=='*':
+    result=num1*num2
+else:
+    print("smth went wrong")
+
+
+if op in ["/", "//", "%"] and num2==0:
+    print("you cant divide smth to 0")
+else:
+    print(f"first number is {num1},second number is {num2},operator is{op},so the result will be:{result}")
+
